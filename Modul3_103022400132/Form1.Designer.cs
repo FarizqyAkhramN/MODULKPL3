@@ -41,6 +41,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.DisplayMember = "Celcius, Fahrenheit, Kelvin, Reamur";
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Celcius", "Fahrenheit", "Kelvin", "Reamur" });
             comboBox1.Location = new Point(234, 109);
@@ -58,6 +59,7 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(109, 23);
             comboBox2.TabIndex = 1;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -76,6 +78,7 @@
             richTextBox1.Size = new Size(164, 23);
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = "";
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // richTextBox2
             // 
@@ -84,6 +87,7 @@
             richTextBox2.Size = new Size(164, 23);
             richTextBox2.TabIndex = 4;
             richTextBox2.Text = "";
+            richTextBox2.TextChanged += richTextBox2_TextChanged;
             // 
             // label2
             // 
@@ -120,6 +124,7 @@
             button1.TabIndex = 8;
             button1.Text = "Convert";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
